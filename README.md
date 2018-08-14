@@ -15,10 +15,10 @@ pip install -r requirements.txt
 
 To run the code, the user needs to specify some hyperparameters and the link to the json file.  These parameters can be changed easily in the main.py file as follows
 
-- nb_clusters : represent the number of cluster (more details on how to choose this parameter in 'More about clustering algorithms' section)
+- nb_clusters: represent the number of cluster (more details on how to choose this parameter in 'More about clustering algorithms' section)
 - seed : The seed for clustering algorithms
-- features_names : The name of the features (columns) from the dataset
-- algo_clustering : The name of the clustering algorithm that we want to use. As a baseline we suggest : **k-means**, **Agglomerative Clustering** and **Spectral clustering**
+- features_names: The name of the features (columns) from the dataset
+- algo_clustering: The name of the clustering algorithm that we want to use. As a baseline we suggest: **k-means**, **Agglomerative Clustering** and **Spectral clustering**
 
 ```python
 
@@ -65,14 +65,14 @@ The results of this project are saved in the folder *results* and are as follows
 
 The implementation is organised as follows:
 
-- `main.py` : Allows the user to run the clustering and save the results
-- `data_loader.py` : read the JSON and return a numpy array that contains the observations and their features
-- `clustering_algorithms.py` : train a clustering model. To add a new clustering algorithm, one can import it and added to the dictionary of available clustering algorithms: *algos*
-- `data_saver.py` : Save results
+- `main.py`: Allows the user to run the clustering and save the results
+- `data_loader.py`: read the JSON and return a numpy array that contains the observations and their features
+- `clustering_algorithms.py`: train a clustering model. To add a new clustering algorithm, one can import it and added to the dictionary of available clustering algorithms: *algos*
+- `data_saver.py`: Save results
 
 ## More about clustering algorithms
 
-In this projects we used three different algorithms :  **k-means**, **Agglomerative Clustering** and **Spectral clustering** from SkLearn library. To specify an additional argument, user can refer to the SkLearn documentation and add the name of the argument when we call the clustering algorithm
+In this projects we used three different algorithms:  **k-means**, **Agglomerative Clustering** and **Spectral clustering** from SkLearn library. To specify an additional argument, user can refer to the SkLearn documentation and add the name of the argument when we call the clustering algorithm
 ```
 results,model = clustering_algorithms(algo_clustering,training_data,nb_clusters,random_state=seed,**ADD OTHER ARGMUENTS HERE**)
 ```
@@ -85,9 +85,9 @@ More details and analysis of **Agglomerative Clustering** and **Spectral cluster
 
 **Choosing the number of clusters for K-means**
 
-We remind here a simple method for determining the optimal number of clusters. The Elbrow method consist on  computing the total within-cluster sum of square (WSS) for different values of K (number of clusters) and then Plot the curve of WSS according to the number of clusters k.
+We remind here a simple method for determining the optimal number of clusters. The Elbrow method consists on  computing the total within-cluster sum of square (WSS) for different values of K (number of clusters) and then plot the curve of WSS according to the number of clusters k.
 
-The location of a bend in the plot is an indicator of the appropriate number of clusters (around 4 or 5 in this case)
+The location of a bend in the plot is an indicator of the appropriate number of clusters (around 4 or 5 in this case).
 
 the scripts `elbrow_analysis.py` returns this plot for the case of **K-means**.
 
