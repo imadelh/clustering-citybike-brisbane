@@ -55,9 +55,12 @@ The results of this project are saved in the folder *results* and are as follows
 
 - A CSV file containing the initial data and an additional column: **clusters**
 - A PNG file that contains the plot of the initial stations and the the plot after clustering
+[<center> <img  height="340" width="900" src="results/plot_clusters_spectral.png">]
+  
 - A log-file
 
-[<center> <img  height="50" width="90" src="results/plot_clusters_spectral.png">]
+
+**Clusters**
 
 ## Implementation details
 
@@ -87,7 +90,7 @@ The location of a bend in the plot is an indicator of the appropriate number of 
 
 the scripts `elbrow_analysis.py` returns this plot for the case of **K-means**.
 
-[<center> <img  height="50" width="50" src="results/elbrow.png">]
+<center> <img  height="300" width="400" src="results/elbrow.png">
 
 -------
 Imad El Hanafi
