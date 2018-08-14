@@ -1,6 +1,6 @@
 # Geographical Clustering of CityBike‘s Stations in Brisbane
 
-In this mini-project we build an *industrialized* code (python 3.6) for unsupervised clustering. The goal is to provide a user-friendly documented code with parameters that are easily modifiable to cluster bike stations according to their locations.
+In this mini-project we build an *industrialized* code (python 3.6) for unsupervised learning: Clustering. The goal is to provide a user-friendly documented code, with parameters that are easily modifiable, to cluster bike stations according to their locations.
 
 
 ## Requirements
@@ -20,7 +20,7 @@ To run the code, the user needs to specify some hyperparameters and the link to 
 - features_names : The name of the features (columns) from the dataset
 - algo_clustering : The name of the clustering algorithm that we want to use. As a baseline we suggest : **k-means**, **Agglomerative Clustering** and **Spectral clustering**
 
-```
+```python
 
 ##### File names directory
 file_name = '../data/Brisbane_CityBike.json'
@@ -46,9 +46,9 @@ python main.py
 
 ## Running the code online
 
-Using MyBinder.com, we can easily build a virtual environnement using Docker (with the necessary requirements) and run the code via the browser.
+Using MyBinder.com, we can easily build a virtual environnement using **Docker container** (with the necessary requirements) and run the code via the browser.
 The following link will open a Jupyter Lab tab in the browser. Then we can run a terminal session (Other->Terminal) and be able to execute the code as explained before.
-[<center> <img src="https://mybinder.org/badge.svg">](https://mybinder.org/v2/gh/imadelh/Mobile-Networks_Graph-Models/master?urlpath=lab)
+[<center> <img src="https://mybinder.org/badge.svg">](https://mybinder.org/v2/gh/imadelh/clustering-citybike-brisbane/master?urlpath=lab)
 
 ## Results
 
@@ -78,7 +78,9 @@ results,model = clustering_algorithms(algo_clustering,training_data,nb_clusters,
 ```
 
 
-Although the goal here is not to implement or analyse the clustering algorithms, but rather to give the user a data science tool to perform clustering. More details and analysis of **Agglomerative Clustering** and **Spectral clustering** (stability, optimization problem formulation, EigenGap method and choosing the number of clusters) can be found in my project about clustering:
+Although the goal here is not to implement or analyse the clustering algorithms, but rather to give the user a data science tool to perform clustering. 
+
+More details and analysis of **Agglomerative Clustering** and **Spectral clustering** (stability, optimization problem formulation, EigenGap method and choosing the number of clusters) can be found in my project about clustering:
 [<center> <img  height="50" width="90" src="http://nbviewer.jupyter.org/static/img/nav_logo.svg">](https://github.com/imadelh/Advanced-Machine-Learning/blob/master/Labs_/Lab%20-%202/SemiSupervisedLearning_SpectralClustering.ipynb)
 
 **Choosing the number of clusters for K-means**
