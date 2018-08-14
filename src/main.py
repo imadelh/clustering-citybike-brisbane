@@ -1,10 +1,13 @@
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import logging
 from data_loader import data_loader
 from clustering_algorithms import clustering_algorithms
 from data_saver import data_saver
 logging.basicConfig(filename='../results/log_file.log',level=logging.DEBUG)
+
 
 ##### File names directory
 file_name = '../data/Brisbane_CityBike.json'
