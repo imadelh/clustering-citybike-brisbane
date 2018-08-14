@@ -45,7 +45,7 @@ python main.py
 
 ## Running the code online
 
-Using MyBinder.com, we can easily build a virtual environnement using Docker (with the necessary requirements) and run the code via the browser.
+Using MyBinder.com, we can easily build a virtual environnement using **Docker containers** (with the necessary requirements) and run the code via the browser.
 The following link will open a Jupyter Lab tab in the browser. Then we can run a terminal session (Other->Terminal) and be able to execute the code as explained before.
 [<center> <img src="https://mybinder.org/badge.svg">](https://mybinder.org/v2/gh/imadelh/clustering-citybike-brisbane/master?urlpath=lab)
 
