@@ -61,8 +61,6 @@ The results of this project are saved in the folder *results* and are as follows
 - A log-file
 
 
-**Clusters**
-
 ## Implementation details
 
 The implementation is organised as follows:
